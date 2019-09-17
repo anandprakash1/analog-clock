@@ -1,0 +1,251 @@
+.clock {
+    width: 300px;
+    height: 300px;
+    /* margin: 8% auto 0; */
+    border-radius: 50%;
+    position: relative;
+    background: #2D2D2D;
+    border: 1px solid #333;
+    box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+  }
+
+  
+  .center {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #F06918;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+  }
+  
+  .hour_hand {
+    position: absolute;
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    background:#43433D;
+    top: 79px;
+    transform-origin: 50% 72px;
+    left: 50%;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .minute_hand {
+    position: absolute;
+    z-index: 6;
+    width: 4px;
+    height: 100px;
+    background: #666;
+    top: 46px;
+    left: 50%;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 105px;
+  }
+  
+  .handNightMode{
+    background: #34C77A;
+  }
+  
+  .second_hand {
+    position: absolute;
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background: #F06918;
+    top: 26px;
+    left: 50%;
+    margin-left: -1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 125px;
+  }
+  
+  span {
+    display: inline-block;
+    position: absolute;
+    color: #E9DEC8;
+    font-size: 22px;
+    font-family: 'Poiret One';
+    font-weight: 700;
+    z-index: 4;
+  }
+  .nightTheme {
+    color: #34C77A;
+  }
+  
+  
+  .h12 {
+    top: 30px;
+    left: 47%;
+    margin-left: -9px;
+    font-size: 35px;
+  }
+
+  .diallines {
+    /* position: absolute;
+    z-index: 2;
+    width: 2px;
+    height: 10px;
+    background: #666;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px; */
+
+    position: absolute;
+    z-index: 2;
+    margin-top: 15px;
+    width: 2px;
+    height: 10px;
+    background: #666;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 135px;
+  }
+
+  .diallinesNightMode {
+    background: #34C77A !important;
+  }
+  .numbers {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: #E9DEC8;
+    border: 1px solid #E9DEC8;
+    border-radius: 20px;
+    left: 49%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+  }
+  .numbersNightMode {
+    background: #34C77A;
+    border: 1px solid #34C77A;
+  }
+  /* .diallines:nth-child(5n+1) {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: #E9DEC8;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+  } */
+  
+  .info {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    background: #020202;
+    text-align: center;
+    line-height: 20px;
+    color: #E9DEC8;
+    font-size: 11px;
+    margin-left: -60px;
+    font-family: "Poiret One";
+    font-weight: 700;
+    z-index: 3;
+    letter-spacing: 3px;
+    margin-left: -60px;
+  }
+
+  .infoNightMode {
+    color: #34C77A;
+  }
+  
+  .temp {
+    left: 40%;
+    top: 40%;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+.current_temperature {
+  padding-top: 34%;
+}
+.date {
+  padding-top: 15%;
+}
+
+.theme {
+  cursor: pointer;
+  background: #E9DEC8;
+  color: #34C77A;
+  padding: 10px;
+}
+.theme:hover {
+  background: #34C77A;
+  color: #E9DEC8;
+}
+
+.themeNight {
+  background: #34C77A;
+  color: #E9DEC8;
+}
+
+.themeNight:hover {
+  background: #E9DEC8;
+  color: #34C77A;
+}
+
+#newTimeZone {
+  top: 22%;
+  left: 53%;
+  width: auto;
+  height: auto;
+  background: transparent;
+  font-size: 15px;
+}
+
+.Latitude,.Longitude {
+  top: 100%;
+  position: absolute;
+  margin-top: 5%;
+  left: 25%;
+}
+
+.Longitude {
+  margin-top: 15%;
+}
+
+#manualLocation {
+  margin-top: 6%;
+}
+
+.showDate {
+  margin-top: 10%;
+}
+
+.infoBorder{
+  border: 1px solid red;
+  border-radius: 50%;
+}
+
+.numbers24{
+ position: absolute;
+    z-index: 2;
+    width: 0px;
+    height: 10px;
+    background: #E9DEC8;
+    border: 1px solid #E9DEC8;
+    border-radius: 20px;
+    left: 49%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+    display: none;
+  }
